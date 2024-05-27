@@ -1,0 +1,62 @@
+# Compiled Object files
+*.sln.cache
+*.dll
+*.exe
+*.pdb
+*.dll.config
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+*.pdb
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# Visual Studio files
+.vs/
+*.vscode/
+*.suo
+*.user
+*.sln.docstates
+*.userprefs
+*.vssettings
+*.vssscc
+*.vspscc
+*.sln.ide
+
+# Test Results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# Resharper
+_ReSharper*/
+*.resharper*
+*.DotSettings.user
+
+# GhostDoc plugin setting file
+*.GhostDoc.xml
+
+# StyleCop
+StyleCopReport.xml
+
+# NCrunch
+*.ncrunch*
+.*crunch*.local.xml
+
+# Installshield output folder
+[Ee]xpress/
+
+# DocFX output folder
+_docfx/
+
+# Build process
+node_modules/
