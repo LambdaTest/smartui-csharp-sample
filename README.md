@@ -17,7 +17,7 @@ Follow these instructions to clone the repository, install the necessary package
 
     ```sh
     git clone https://github.com/yourusername/csharp-sdk-testing.git
-    cd csharp-sdk-testing
+    cd csharp-sdk-testing/LambdaTest.Selenium.Driver.Test
     ```
 
 2. **Restore the packages:**
