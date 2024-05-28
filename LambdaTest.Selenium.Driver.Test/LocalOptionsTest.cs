@@ -11,11 +11,13 @@ namespace LambdaTest.Selenium.TestProject
             using IWebDriver driver = new ChromeDriver();
             try
             {   
-                var options = new
+               var optionsForDOM = new Dictionary<string, object>
                 {
-                    selectDOM = new
-                    {
-                        id = new[] { "ID-1", "ID-2" }
+                    { "ignoreDOM", new Dictionary<string, object>
+                        {
+                            { "class", new[] { "tracking-tighter" } },
+                            { "id", new[] { "ID-1", "ID-2" } }
+                        }
                     }
                 };
 
