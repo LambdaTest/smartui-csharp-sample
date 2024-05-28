@@ -23,7 +23,7 @@ namespace LambdaTest.Selenium.TestProject
 
                 Console.WriteLine("Driver started");
                 driver.Navigate().GoToUrl("https://www.pinterest.com/pin/16958936087791895/");
-                await SmartUISnapshot.CaptureSnapshot(driver, "SS-1",options);
+                await SmartUISnapshot.CaptureSnapshot(driver, "SS-1",optionsForDOM);
             }
             catch (Exception ex)
             {
