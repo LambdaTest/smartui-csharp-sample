@@ -44,13 +44,12 @@ namespace LambdaTest.Selenium.TestProject
                 {
                     { "ignoreDOM", new Dictionary<string, object>
                         {
-                            { "class", new[] { "tracking-tighter" } },
                             { "id", new[] { "ID-1", "ID-2" } }
                         }
                     }
                 };
                 // Take SmartUI snapshot
-                await SmartUISnapshot.CaptureSnapshot(driver, "LT-Home",optionsForDOM);
+                await SmartUISnapshot.CaptureSnapshot(driver, "Lambdatest-Cloud",optionsForDOM);
 
                 driver.Quit();
             }

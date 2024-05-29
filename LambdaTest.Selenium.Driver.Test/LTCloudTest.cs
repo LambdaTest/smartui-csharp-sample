@@ -41,7 +41,7 @@ namespace LambdaTest.Selenium.TestProject
                 driver.Navigate().GoToUrl("https://www.lambdatest.com");
 
                 // Take SmartUI snapshot
-                await SmartUISnapshot.CaptureSnapshot(driver, "LT-Home");
+                await SmartUISnapshot.CaptureSnapshot(driver, "Lambdatest-Cloud");
 
                 driver.Quit();
             }
