@@ -15,7 +15,6 @@ namespace LambdaTest.Selenium.TestProject
                 {
                     { "ignoreDOM", new Dictionary<string, object>
                         {
-                            { "class", new[] { "tracking-tighter" } },
                             { "id", new[] { "ID-1", "ID-2" } }
                         }
                     }
