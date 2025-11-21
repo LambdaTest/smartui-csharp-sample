@@ -2,13 +2,6 @@
 
 Welcome to the SmartUI SDK sample for Selenium C#. This repository demonstrates how to integrate SmartUI visual regression testing with Selenium C#.
 
-## Prerequisites
-
-- .NET SDK 8.0 or higher
-- LambdaTest account credentials (for Cloud tests)
-- Chrome browser (for Local tests)
-- Node.js (for SmartUI CLI)
-
 ## Repository Structure
 
 ```
@@ -24,87 +17,97 @@ smartui-csharp-sample/
 └── README.md
 ```
 
-## Quick Start
+## 1. Prerequisites and Environment Setup
 
-### Local Execution
+### Prerequisites
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/LambdaTest/smartui-csharp-sample
-   cd smartui-csharp-sample/LambdaTest.Selenium.Driver.Test
-   ```
+- .NET SDK 8.0 or higher
+- Node.js installed (for SmartUI CLI)
+- LambdaTest account credentials (for Cloud tests)
+- Chrome browser (for Local tests)
 
-2. **Restore dependencies:**
-   ```bash
-   dotnet restore
-   dotnet build
-   ```
+### Environment Setup
 
-3. **Install SmartUI CLI:**
-   ```bash
-   npm install @lambdatest/smartui-cli
-   ```
+**For Cloud:**
+```bash
+export LT_USERNAME='your_username'
+export LT_ACCESS_KEY='your_access_key'
+export PROJECT_TOKEN='your_project_token'
+```
 
-4. **Set your Project Token:**
-   ```bash
-   export PROJECT_TOKEN='your_project_token'
-   ```
+**For Local:**
+```bash
+export PROJECT_TOKEN='your_project_token'
+```
 
-5. **Create SmartUI config:**
-   ```bash
-   npx smartui config:create smartui-web.json
-   ```
+## 2. Initial Setup and Dependencies
 
-6. **Run the test:**
-   ```bash
-   npx smartui exec -- dotnet run -- local
-   ```
+### Clone the Repository
 
-### Cloud Execution
+```bash
+git clone https://github.com/LambdaTest/smartui-csharp-sample
+cd smartui-csharp-sample/LambdaTest.Selenium.Driver.Test
+```
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/LambdaTest/smartui-csharp-sample
-   cd smartui-csharp-sample/LambdaTest.Selenium.Driver.Test
-   ```
+### Install Dependencies
 
-2. **Restore dependencies:**
-   ```bash
-   dotnet restore
-   dotnet build
-   ```
+The repository already includes the required dependencies in `LambdaTest.Selenium.Driver.Test.csproj`. Restore them:
 
-3. **Install SmartUI CLI:**
-   ```bash
-   npm install @lambdatest/smartui-cli
-   ```
+```bash
+dotnet restore
+dotnet build
+```
 
-4. **Set your credentials:**
-   ```bash
-   export LT_USERNAME='your_username'
-   export LT_ACCESS_KEY='your_access_key'
-   export PROJECT_TOKEN='your_project_token'
-   ```
-
-5. **Create SmartUI config:**
-   ```bash
-   npx smartui config:create smartui-web.json
-   ```
-
-6. **Run the test:**
-   ```bash
-   npx smartui exec -- dotnet run -- cloud
-   ```
-
-## Dependencies
-
-The project uses the following NuGet packages (already configured in `.csproj`):
-
+**Dependencies included:**
 - `LambdaTest.Selenium.Driver` - SmartUI SDK for Selenium C#
 - `Selenium.WebDriver` - Selenium WebDriver
 - `Selenium.WebDriver.ChromeDriver` - ChromeDriver for local testing
 - `LambdaTest.Sdk.Utils` - LambdaTest SDK utilities
 - `Newtonsoft.Json` - JSON handling
+
+### Install SmartUI CLI
+
+```bash
+npm install @lambdatest/smartui-cli
+```
+
+### Create SmartUI Configuration
+
+```bash
+npx smartui config:create smartui-web.json
+```
+
+## 3. Steps to Integrate Screenshot Commands into Codebase
+
+The SmartUI screenshot function is already implemented in the repository.
+
+**Cloud Test** (`LTCloudTest.cs`):
+```csharp
+driver.Navigate().GoToUrl("https://www.lambdatest.com");
+await SmartUISnapshot.CaptureSnapshot(driver, "screenshot");
+```
+
+**Local Test** (`LocalTest.cs`):
+```csharp
+driver.Navigate().GoToUrl("https://www.lambdatest.com");
+await SmartUISnapshot.CaptureSnapshot(driver, "screenshot");
+```
+
+**Note**: The code is already configured and ready to use. You can modify the URL and screenshot name if needed.
+
+## 4. Execution and Commands
+
+### Local Execution
+
+```bash
+npx smartui exec -- dotnet run -- local
+```
+
+### Cloud Execution
+
+```bash
+npx smartui exec -- dotnet run -- cloud
+```
 
 ## Test Files
 
@@ -125,17 +128,6 @@ The project uses the following NuGet packages (already configured in `.csproj`):
 
 - `LTCloudOptionsTest.cs` - Cloud test with SmartUI options
 - `LocalOptionsTest.cs` - Local test with SmartUI options
-
-## Configuration
-
-### SmartUI Config (`smartui-web.json`)
-
-Create the SmartUI configuration file using:
-```bash
-npx smartui config:create smartui-web.json
-```
-
-This will create a default configuration file that you can customize.
 
 ## View Results
 
