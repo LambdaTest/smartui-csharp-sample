@@ -1,7 +1,0 @@
-[:debug] http request: GET /packageinfo
-[:debug] http response: {"status":200,"headers":{"date":"Wed, 19 Nov 2025 16:20:02 GMT","content-type":"application/json","transfer-encoding":"chunked","connection":"keep-alive","access-control-allow-methods":"GET, POST, PUT, OPTIONS,PATCH","access-control-allow-headers":"Pragma,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range,Authorization,username,traceparent,tracestate","access-control-expose-headers":"Pragma,DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Content-Range,Range","cf-cache-status":"DYNAMIC","server":"cloudflare","cf-ray":"9a1108573db7ad7b-DEL"},"body":{"data":{"latestVersion":"4.1.47","deprecated":false,"additionalDescription":"If you face any problems executing tests, upgrade your node version to v20.3 or above","additionalDescriptionLatestVersion":"If you face any problems executing tests, upgrade your node version to v20.3 or above"}}}
-LambdaTest SmartUI CLI v4.1.41
-If you face any problems executing tests, upgrade your node version to v20.3 or above
-A new version 4.1.47 is available!
-## No config file provided. Using default config.
-[:error] Error: Command not found "dotnet"
