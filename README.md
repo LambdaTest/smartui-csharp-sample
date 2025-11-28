@@ -65,10 +65,6 @@ dotnet build
 - `LambdaTest.Sdk.Utils` - LambdaTest SDK utilities
 - `Newtonsoft.Json` - JSON handling
 
-**Important Selenium Version Requirements:**
-- ✅ **Supported**: Selenium WebDriver 4.21.0 and above
-- ❌ **Not Supported**: Selenium WebDriver 3.x (end-of-life)
-
 **Note**: If you're currently using Selenium 3.x, you'll need to upgrade to Selenium 4.x to use SmartUI. See [Selenium 4 Migration Guide](https://www.selenium.dev/documentation/webdriver/getting_started/upgrade_to_selenium_4/) for migration steps.
 
 ### Install SmartUI CLI
