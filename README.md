@@ -60,12 +60,10 @@ dotnet build
 
 **Dependencies included:**
 - `LambdaTest.Selenium.Driver` - SmartUI SDK for Selenium C#
-- `Selenium.WebDriver` - Selenium WebDriver (version 4.21.0 or higher required)
+- `Selenium.WebDriver` - Selenium WebDriver
 - `Selenium.WebDriver.ChromeDriver` - ChromeDriver for local testing
 - `LambdaTest.Sdk.Utils` - LambdaTest SDK utilities
-- `Newtonsoft.Json` - JSON handling
 
-**Note**: If you're currently using Selenium 3.x, you'll need to upgrade to Selenium 4.x to use SmartUI. See [Selenium 4 Migration Guide](https://www.selenium.dev/documentation/webdriver/getting_started/upgrade_to_selenium_4/) for migration steps.
 
 ### Install SmartUI CLI
 
