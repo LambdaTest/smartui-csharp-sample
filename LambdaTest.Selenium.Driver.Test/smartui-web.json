@@ -28,5 +28,7 @@
   },
   "waitForTimeout": 1000,
   "enableJavaScript": false,
-  "allowedHostnames": []
+  "allowedHostnames": [],
+  "smartIgnore": false,
+  "showRenderErrors": false
 }
