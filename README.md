@@ -1,4 +1,4 @@
-# SmartUI SDK Sample for Selenium C#
+# SmartUI SDK Sample for Selenium C# — TestMu AI (Formerly LambdaTest)
 
 Welcome to the SmartUI SDK sample for Selenium C#. This repository demonstrates how to integrate SmartUI visual regression testing with Selenium C#.
 
@@ -23,7 +23,7 @@ smartui-csharp-sample/
 
 - .NET SDK 8.0 or higher
 - Node.js installed (for SmartUI CLI)
-- LambdaTest account credentials (for Cloud tests)
+- TestMu AI account credentials (for Cloud tests)
 - Chrome browser (for Local tests)
 
 ### Environment Setup
@@ -62,7 +62,7 @@ dotnet build
 - `LambdaTest.Selenium.Driver` - SmartUI SDK for Selenium C#
 - `Selenium.WebDriver` - Selenium WebDriver
 - `Selenium.WebDriver.ChromeDriver` - ChromeDriver for local testing
-- `LambdaTest.Sdk.Utils` - LambdaTest SDK utilities
+- `LambdaTest.Sdk.Utils` - TestMu AI SDK utilities
 
 
 ### Install SmartUI CLI
@@ -113,7 +113,7 @@ npx smartui exec -- dotnet run -- cloud
 
 ### Cloud Test (`LTCloudTest.cs`)
 
-- Connects to LambdaTest Cloud using Selenium Remote WebDriver
+- Connects to TestMu AI Cloud using Selenium Remote WebDriver
 - Reads credentials from environment variables (`LT_USERNAME`, `LT_ACCESS_KEY`)
 - Takes screenshot with name: `screenshot`
 
@@ -135,4 +135,23 @@ After running the tests, visit your SmartUI project dashboard to view the captur
 
 ## More Information
 
-For detailed onboarding instructions, see the [SmartUI Selenium C# Onboarding Guide](https://www.lambdatest.com/support/docs/smartui-onboarding-selenium-csharp/).
+For detailed onboarding instructions, see the [SmartUI Selenium C# Onboarding Guide](https://www.testmuai.com/support/docs/smartui-onboarding-selenium-csharp/).
+
+## 🚀 [LambdaTest is Now TestMu AI](https://www.testmuai.com/lambdatest-is-now-testmuai/)
+
+👋 Welcome to TestMu AI, the next evolution of LambdaTest. As of January 2026, LambdaTest has officially rebranded to TestMu AI. We have evolved from a cross-browser testing cloud into a unified, AI-native quality engineering platform designed for the modern DevOps era.
+
+Whether you have been part of the LambdaTest community for years or are just discovering TestMu AI, our mission remains the same: to help you ship faster with high-scale test execution, autonomous testing, and deep quality analytics.
+
+**🔄 Our Rebrand Journey**
+
+We chose the name TestMu AI to reflect our shift towards intelligent, autonomous testing. While our identity has changed, our core technology and commitment to the testing community stay the same.
+
+**✨ Specialties**
+
+- 🤖 AI-Native Test Execution (Formerly LambdaTest)
+- ⚡ Autonomous Test Automation
+- 🌐 Cross-Browser & Mobile Testing
+- 📊 Unified Quality Intelligence
+
+👉 Find [LambdaTest's New Home](https://www.testmuai.com/).
